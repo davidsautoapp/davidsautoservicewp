@@ -29,15 +29,7 @@ function main_banner() {
 				</p>
 			</div>
 		</div>
-		<!-- <div class="container repeat">
-      <div class="banner_text_wthree_pvt">
-        <h3 class="home-banner-w3">Greenpoint, Brooklyn<br>New York Tri-State Area</h3>
-        <p class="bnr-txt main-title-w3pvt">Our mission: keeping you a satisfied customer
-        </p>
-      </div>
-    </div> -->
-		<!-- //banner text -->
-		<!-- banner-bottom -->
+		
 		<div class="banner-bottom-w3ls">
 			<div class="container">
 				<div class="row">

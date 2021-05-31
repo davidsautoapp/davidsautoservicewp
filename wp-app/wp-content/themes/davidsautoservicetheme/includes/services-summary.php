@@ -1,43 +1,47 @@
 <?php
 function services_summary_view($services) {
   ?>
-  <section id="feature">
-    <div class="container">
-      <div class="row">
-        <div class="features">
+  <!-- about-->
+	<section class="single_grid_w3_main align-w3-abt" id="about">
+		<div class="container">
+			<div class="wthree_pvt_title text-center">
+				<h4 class="w3pvt-title">Welcome</h4>
+        <?php if (have_posts()): while(have_posts()): the_post(); ?>
+				  <p class=""><?php the_content() ?></p>
+        <?php endwhile; endif; ?>
+			</div>
+			<div class="row">
 
-          <?php
-          foreach($services as $service):
-            ?>
-            
-            <div class="col-md-6 col-sm-12 wow fadeInDown" data-wow-duration="500ms" data-wow-delay="200ms">
-              <div class="feature-wrap row">
-                <div class="col-sm-2 col-md-3">
-                  <i class="<?= $service['icon'] ?>"></i>
+        <?php foreach($services as $service): ?>
+
+          <div class="col-lg-6 mb-4">
+            <div class="abt-grid">
+              <div class="row">
+                <div class="col-3">
+                  <div class="abt-icon">
+                    <span class="<?= $service['icon'] ?>"></span>
+                  </div>
                 </div>
-                <div class="col-sm-10 col-md-9">
-                  <h2><?= $service['title'] ?></h2>
-                  <h3><?= $service['short_description'] ?></h3>
+                <div class="col-9">
+                  <div class="abt-txt">
+                    <h4><?= $service['title'] ?></h4>
+                    <p><?= $service['short_description'] ?></p>
+                  </div>
                 </div>
               </div>
             </div>
-            <!--/.col-md-4-->
+          </div>
 
-            <?php
-          endforeach;
-          ?>
+        <?php endforeach; ?>
 
-        </div>
-        <!--/.services-->
-      </div>
-      <!--/.row-->
-      <div class="row text-center">
-        <a class="btn-slide wow fadeInDown" href="<?php echo get_site_url() . '/services#services' ?>">Read More</a>
-      </div>
-    </div>
-    <!--/.container-->
-  </section>
-  <!--/#feature-->
+			</div>
+			<div class="d-flex justify-content-center">
+				<a href="<?php echo get_site_url() . '/services#services' ?>" class="btn w3ls-btn">view more</a>
+			</div>
+		</div>
+	</section>
+	<!-- //about -->
+
   <?php
 
 }
