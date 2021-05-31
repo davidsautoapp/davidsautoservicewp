@@ -33,7 +33,7 @@ function services_list_view($services) {
               </div>
 
 							<div class="d-flex justify-content-start">
-								<a href="about.html" class="btn w3ls-btn">More Details</a>
+								<a href="<?= get_site_url() . '/services#services' ?>" class="btn w3ls-btn">More Details</a>
 							</div>
 						</div>
 

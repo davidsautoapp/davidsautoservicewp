@@ -597,7 +597,7 @@ a.reqe-button {
 /* banner */
 
 .banner {
-    background: url(../images/banner.jpg) center no-repeat;
+    /* background: url(../images/banner.jpg) center no-repeat; */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -615,7 +615,7 @@ a.reqe-button {
 
 @media screen and (max-width:750px) {
     .banner {
-        background: url(../images/banner-mobile.jpg) center no-repeat;
+        /* background: url(../images/banner-mobile.jpg) center no-repeat; */
     }
 }
 
@@ -793,7 +793,7 @@ form.d-flex.serching-styles-w3pvt {
     z-index: 0;
 }
 
-.inner-banner-w3ls.about {
+/* .inner-banner-w3ls.about {
     background: url(../images/inner-banner1.jpg) no-repeat center / cover;
 }
 
@@ -803,7 +803,7 @@ form.d-flex.serching-styles-w3pvt {
 
 .inner-banner-w3ls.contact {
     background: url(../images/inner-banner3.jpg) no-repeat center / cover;
-}
+} */
 
 @media screen and (max-width:750px) {
     .inner-banner-w3ls.about {

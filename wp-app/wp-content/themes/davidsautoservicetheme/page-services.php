@@ -12,6 +12,7 @@ secondary_banner();
 
 <!-- about-->
 <section class="single_grid_w3_main align-w3">
+  <a id="services"></a>
   <div class="container">
     <div class="row pt-lg-4">
       <?php if(have_posts()): while(have_posts()): the_post(); ?>
